@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:800');
 
 * {
   margin: 0;
@@ -15,6 +16,15 @@ html{
 body{
   background: #141212;
   color: #fff;
+}
+
+.body2 {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #141212;
 }
 
 .container{
@@ -245,7 +255,7 @@ nav ul li a:hover::after{
 .layer{
   width: 100%;
   height: 0%;
-  background: linear-gradient(rgba(0,0,0,0.6), #e31b59);
+  background: linear-gradient(rgba(0,0,0,0,6), #e31b59);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -372,7 +382,6 @@ form .btn2 {
   padding: 25px 0;
   background:#1d1d1d;
   font-weight: 300;
-  margin-top: 20px;
 }
 
 .copyright i {
@@ -381,6 +390,137 @@ form .btn2 {
 
 nav .fa-solid {
   display: none;
+}
+
+.loader{
+  width: 120px;
+  height: 150px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-image: 
+    linear-gradient(#ddd 50%, #bbb 51%),
+    linear-gradient(#ddd, #ddd),
+    linear-gradient(#ddd, #ddd),
+    radial-gradient(ellipse at center,
+    #aaa 25%, 
+    #eee 26%,
+    #eee 50%, 
+    #0000 55%),
+    radial-gradient(ellipse at center,
+    #aaa 25%,
+    #eee 26%,
+    #eee 50%, 
+    #0000 55%)
+    radial-gradient(ellipse at center,
+    #aaa 25%,
+    #eee 26%,
+    #eee 50%, 
+    #0000 55%);
+  background-position: 
+      0 20px,
+      45px 0,
+      8px 6px,
+      55px 3px,
+      75px 3px,
+      95px 3px;
+  background-size: 
+    100% 4px,
+    1px 23px,
+    30px 8px,
+    15px 15px,
+    15px 15px,
+    15px 15px;
+  position: relative;
+  border-radius: 6%;
+  animation: shake 3s ease-in-out infinite;
+  transform-origin: 60px 180px;
+}
+
+.loader:before{
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 5px;
+  background: #aaa;
+  left: 5px;
+  top: 100%;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 102px 0 #aaa;
+}
+
+.loader:after{
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 20px;
+  background-color: #bbdefb;
+  background-image: 
+    linear-gradient(to right,
+      #0004 0%,
+      #0004 49%,
+      #0000 50%,
+      #0000 100%),
+    linear-gradient(135deg,
+      #64b5f6 50%,
+      #607d8b 51%);
+  background-size: 30px 100%, 90px 80px;
+  background-repeat: repeat, no-repeat;
+  background-position: 0 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 10px solid #ddd;
+  box-shadow: 
+      0 0 0 4px #999 inset,
+      0 0 6px 6px #0004 inset;
+  animation: spin 3s ease-in-out infinite;
+}
+
+.p{
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+@keyframes spin{
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(750deg);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+@keyframes shake {
+  
+  65%,
+  80%,
+  88%,
+  96% {
+    transform: rotate(0.5deg);
+  }
+
+  50%,
+  75%,
+  84%,
+  92% {
+    transform: rotate(-0.5deg);
+  }
+
+  0%,
+  50%,
+  100% {
+    transform: rotate(0);
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -455,7 +595,7 @@ nav .fa-solid {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 20px;
-    border-radius: 25px;
+    border-radius: 40px;
   }
   .tab-links {
     font-size: 16px;

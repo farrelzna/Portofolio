@@ -1,173 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="proto.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="x-icons" href="img/a46ddd7873e5a5425dd566e9b076b350.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="proto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="x-icons"
+      href="img/a46ddd7873e5a5425dd566e9b076b350.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Proto</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="img/BackgroundEraser_20231125_225707312.png" width="80px" height="100px">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="portofolio.html">Portofolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <div class="marker"></div>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text" id="header">
-                <p>Web Portofolio</p>
-                <img src="img/e3a30bed0a253077b4352566a3fa3fc4.jpg" alt="">
-                <h1>Hi, saya <span>Farel</span><br />dan ini Portofolio saya</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img
+            src="img/BackgroundEraser_20231125_225707312.png"
+            width="80px"
+            height="100px"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="marker"></div>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" id="header">
+          <p>Web Portofolio</p>
+          <img src="img/foto.jpg" alt="" />
+          <h1>Hi, saya <span>Farrel</span><br />dan ini Portofolio saya</h1>
         </div>
+      </div>
     </div>
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1"> 
-                    <img src="img/💤.jpeg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <img src="img/💤.jpeg" alt="">
-                    <p>
-                        Saya adalah seorang siswa dari SMK WIKRAMA Bogor, berumur 15 tahun, saya menempati dikelas 10, dan saya berada dijurusan PPLG. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        consectetur rerum provident, ipsum earum quis, laborum animi laboriosam harum mollitia, itaque quisquam quaerat odio
-                        beatae! Quis voluptatum voluptas blanditiis temporibus?
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br />Design Web/App interface</li>
-                            <li><span>Web Development</span><br />Design App interface</li>
-                            <li><span>Game Development</span><br />Building Pc Games</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023 - curent</span><br />Lorem ipsum</li>
-                            <li><span>2022 - curent</span><br />Lorem ipsum</li>
-                            <li><span>2021 - curent</span><br />Lorem ipsum</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
-                            <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
-                            <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/bg.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <img src="img/bg.jpg" alt="" />
+            <p>
+              Halo! Saya Farrel Izzan Maulana, seorang pelajar jurusan PPLG yang
+              berfokus pada desain web. Dengan keahlian dalam menciptakan
+              antarmuka yang menarik dan fungsional, saya berkomitmen
+              menghadirkan solusi kreatif untuk kebutuhan digital. Saya selalu
+              berusaha mengembangkan diri dengan mempelajari tren terbaru dalam
+              teknologi dan desain. Portofolio ini adalah hasil dari dedikasi
+              saya dalam menggabungkan estetika dengan fungsi. Mari diskusikan
+              ide-ide Anda, dan saya siap membantu mewujudkannya!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Design Web/App interface</li>
+                <li><span>Web Development</span><br />Design App interface</li>
+                <li><span>Game Development</span><br />Building Pc Games</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - curent</span><br />Lorem ipsum</li>
+                <li><span>2022 - curent</span><br />Lorem ipsum</li>
+                <li><span>2021 - curent</span><br />Lorem ipsum</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
+                <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
+                <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div id="service">
-        <div class="container">
-            <h1 class="sub-tittle">Service</h1>
-            <div class="service-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque magnam perspiciatis doloribus ex dolorum eaque quos sed
-                    numquam provident, iste harum nemo reiciendis reprehenderit, nam recusandae? Sed dolores iusto dignissimos?</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quam rem vel consequuntur illo reprehenderit ad, illum
-                    sint nihil praesentium neque est ipsum magni soluta ullam. Ullam sunt suscipit beatae.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea perspiciatis qui nulla sint. Explicabo veritatis nihil quas
-                    nemo exercitationem maxime, inventore maiores temporibus iusto a consequuntur nam autem, quod et?</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-tittle">Service</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Saya menghadirkan desain web yang responsif, modern, dan estetis
+              dengan fokus pada user experience terbaik. Setiap elemen dirancang
+              dengan teliti untuk memastikan situs web tidak hanya terlihat
+              menarik, tetapi juga fungsional dan ramah pengguna di semua
+              perangkat.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop-simple"></i>
+            <h2>Framework (Laravel)</h2>
+            <p>
+              Menggunakan Laravel sebagai framework andalan untuk membangun
+              aplikasi web yang efisien, aman, dan berkualitas tinggi. Dengan
+              pendekatan yang terstruktur, saya memastikan setiap proyek
+              memiliki performa optimal dan sesuai kebutuhan pengguna.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>JavaScript (Vue, React)</h2>
+            <p>
+              Membangun antarmuka interaktif dan dinamis dengan menggunakan
+              Vue.js dan React. Saya berfokus pada pengembangan komponen yang
+              efisien dan scalable untuk memberikan pengalaman pengguna yang
+              cepat, fleksibel, dan responsif.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
+      </div>
     </div>
     <div id="Portofolio">
+      <div id="projects">
         <div class="container">
-            <h1 class="sub-tittle">Riwayat Pendidikan</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="img/2022-05-26.jpg" alt="">
-                    <h4>SDN Ciawi 01</h4>
-                    <div class="layer">
-                        <p>Jl. Nasional 11 No.487, Bendungan, Kec. Ciawi, Kabupaten Bogor, Jawa Barat 16720</p>
-                        <a href="https://maps.app.goo.gl/KUNi7fg3Vhgme9g3A"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/2023-06-13.jpg" alt="">
-                    <h4>SMPN 1 Megamendung</h4>
-                    <div class="layer">
-                        <p>8VX8+VWF, Jalan Raya Puncak, Pasir Angin, Megamendung, Cipayung Datar, Kec. Megamendung, Kabupaten Bogor, Jawa Barat 16720</p>
-                        <a href="https://maps.app.goo.gl/Tnfp4pxgUJVRUJ328"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/2021-04-05.jpg" alt="">
-                    <h4>SMK Wikrama Bogor</h4>
-                    <div class="layer">
-                        <p>Jl. Raya Wangun, RT.01/RW.06, Sindangsari, Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146</p>
-                        <a href="https://maps.app.goo.gl/guHwAcdYaGtp9TMd8"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+          <h1 class="sub-tittle" id="projects">My Projects</h1>
+          <div class="project-list">
+            <div class="project-card">
+              <img src="img/image1.png" alt="Project 1" />
+              <h2>Pengaduan Masyarakat</h2>
+              <p>
+                Kami menghadirkan solusi inovatif untuk memenuhi kebutuhan masyarakat melalui web aplikasi yang andal dan efisien.
+                Dibangun menggunakan Framework Laravel, aplikasi ini dirancang untuk memberikan pengalaman terbaik bagi pengguna.
+              </p>
+              <a href="#" class="btn1">View Project</a>
             </div>
-            <a href="#" class="btn">See more</a>
+            <div class="project-card">
+              <img src="img/image2.png" alt="Project 2" />
+              <h2>Tomo App</h2>
+              <p>
+                Cari dan jual berbagai parabotan rumah tangga dengan mudah dan cepat!.
+                Nikmati pengalaman belanja online yang aman, nyaman, dan praktis dengan aplikasi kami yang dirancang menggunakan Framework Laravel
+              </p>
+              <a href="#" class="btn1">View Project</a>
+            </div>
+            <div class="project-card">
+              <img src="img/image1.png" alt="Project 3" />
+              <h2>Apotek</h2>
+              <p>
+                Mudahnya mengelola apotek kini dalam genggaman! Aplikasi ini dirancang khusus untuk memenuhi kebutuhan apotek dengan fitur lengkap, praktis, dan efisien.
+                Dibangun menggunakan Framework Laravel, aplikasi ini memberikan pengalaman yang cepat dan aman.
+              </p>
+              <a href="#" class="btn1">View Project</a>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- <div id="certifications">
+        <div class="container">
+          <h1 class="sub-tittle">Certifications</h1>
+          <div class="certification-list">
+            <div class="certification-card">
+              <h2>UI/UX Design Training</h2>
+              <p>Diselesaikan pada tahun 2023 dari Dicoding Academy</p>
+            </div>
+            <div class="certification-card">
+              <h2>Web Development Masterclass</h2>
+              <p>Pelatihan mendalam tentang Web Development pada 2023.</p>
+            </div>
+            <div class="certification-card">
+              <h2>Laravel Advanced</h2>
+              <p>Pemrograman web menggunakan Laravel tingkat lanjut.</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="container">
+        <h1 class="sub-tittle">Riwayat Pendidikan</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/2022-05-26.jpg" alt="" />
+            <h4>SDN Ciawi 01</h4>
+            <div class="layer">
+              <p>
+                Jl. Nasional 11 No.487, Bendungan, Kec. Ciawi, Kabupaten Bogor,
+                Jawa Barat 16720
+              </p>
+              <a href="https://maps.app.goo.gl/KUNi7fg3Vhgme9g3A"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/2023-06-13.jpg" alt="" />
+            <h4>SMPN 1 Megamendung</h4>
+            <div class="layer">
+              <p>
+                8VX8+VWF, Jalan Raya Puncak, Pasir Angin, Megamendung, Cipayung
+                Datar, Kec. Megamendung, Kabupaten Bogor, Jawa Barat 16720
+              </p>
+              <a href="https://maps.app.goo.gl/Tnfp4pxgUJVRUJ328"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/2021-04-05.jpg" alt="" />
+            <h4>SMK Wikrama Bogor</h4>
+            <div class="layer">
+              <p>
+                Jl. Raya Wangun, RT.01/RW.06, Sindangsari, Kec. Bogor Tim., Kota
+                Bogor, Jawa Barat 16146
+              </p>
+              <a href="https://maps.app.goo.gl/guHwAcdYaGtp9TMd8"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
     </div>
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-tittle">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>farelizanmaulana@gmail.com</p>
-                    <p><i class="fa-sharp fa-solid fa-phone"></i>089099999</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100093467893083&mibextid=vk8aRt"><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://www.instagram.com/farelzna?igsh=MTY4eW0wNmZxNTlrcw=="><i class="fa-brands fa-instagram" ></i></a>
-                    </div>
-                    <a href="images/my-cv.pdf" download class="btn btn2">donlowad cv</a>
-                </div>
-                <div class="contact-right">
-                    <form action="https://formsubmit.co/farelizanmaulana@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="Pengiriman baru!">
-                        <input type="hidden" name="_autoresponse" value="Terima kasih sudah melihat dan mencoba website ini!">
-                        <input type="text" name="Name" placeholder="Your Name" required/>
-                        <input type="email" name="email" placeholder="Your Email" required/>
-                        <textarea name="Massage"rows="6" placeholder="Your Massage" ></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-tittle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>farelizanmaulana@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i>089099999</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100093467893083&mibextid=vk8aRt"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/farrelzna"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/farelzna?igsh=MTY4eW0wNmZxNTlrcw=="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
+            <a href="download" id="downloadCV" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form
+              action="https://formsubmit.co/farelizanmaulana@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="Pengiriman baru!" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Terima kasih sudah melihat dan mencoba website ini!"
+              />
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Massage"
+                rows="6"
+                placeholder="Your Massage"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright Kevin. Made with by farelzna</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright zna. Made with by farelzna</p>
+      </div>
     </div>
+
     <script src="main.js"></script>
-</body>
+    <script>
+      document
+        .getElementById("downloadCV")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Path to the CV file
+          const filePath = "img/mycv.jpg";
+
+          // Create a temporary anchor element
+          const tempLink = document.createElement("a");
+          tempLink.href = filePath;
+          tempLink.download = "Farrel-Izzan-Maulana-CV.jpg"; // Nama file yang akan diunduh
+
+          // Append to the document and trigger download
+          document.body.appendChild(tempLink);
+          tempLink.click();
+
+          // Remove the temporary link
+          document.body.removeChild(tempLink);
+        });
+    </script>
+  </body>
 </html>

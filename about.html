@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="x-icons"
+      href="assets/img/a46ddd7873e5a5425dd566e9b076b350.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>About Me!</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="assets/img/BackgroundEraser_20231125_225707312.png"
+            width="50px"
+            height="70px"
+          />
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="marker"></div>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="about-card">
+          <h1>About</h1>
+          <p class="about-subtitle">
+            An insightful glimpse into who I am – because every detail adds
+            depth to the canvas of life.
+          </p>
+
+          <!-- Tab Menu -->
+          <div class="about-tabs">
+            <button class="tab-button active" onclick="openTab(event, 'intro')">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-6h2v6zm0-8h-2V7h2v4z"
+                  fill="currentColor"
+                />
+              </svg>
+              Intro
+            </button>
+
+            <button class="tab-button" onclick="openTab(event, 'resume')">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm10 18V4H8v16h8zM10 7h4v2h-4V7zm0 4h4v2h-4v-2zm0 4h4v2h-4v-2z"
+                  fill="currentColor"
+                />
+              </svg>
+              Resume
+            </button>
+
+            <button class="tab-button" onclick="openTab(event, 'career')">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14 11h5v7h-5v-7zm-9 0h5v7H5v-7zm4-9h6v2h-6V2zm11 3H4a2 2 0 0 0-2 2v14h20V7a2 2 0 0 0-2-2zm0 16H4V7h16v14z"
+                  fill="currentColor"
+                />
+              </svg>
+              Career
+            </button>
+
+            <button class="tab-button" onclick="openTab(event, 'education')">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm7.37 7.91L12 14.17l-7.37-3.91L12 5.83l7.37 5.08zM5 18v2h14v-2H5z"
+                  fill="currentColor"
+                />
+              </svg>
+              Education
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div id="intro" class="tab-content active-tab" style="display: block">
+            <p>
+              Hi! Thanks for visiting my personal website.
+              <br /><br />
+              Hello! I'm Farrel Izzan Maulana, a student majoring in PPLG who is
+              focusing on web design. With expertise in creating attractive and
+              functional interfaces, I am a student who has a great interest in web interface development. I am committed
+              to creating engaging, functional, and responsive user experiences. With a passion for
+              learning and adaptability, I am constantly honing my skills to produce creative solutions in web development.
+              come up with creative solutions in web development. I am hardworking, detailed, and able to work
+              both independently and in a team. I am committed to to bring creative
+              solutions for digital needs. I always strive to develop myself by
+              learning the latest trends in technology and design. This
+              portfolio is the result of my dedication in combining aesthetics
+              with functionality. Let's discuss your ideas, and I'm ready to
+              help make them a reality!
+            </p>
+            <br />
+            <p>Looking forward to working with you!</p>
+          </div>
+
+          <div id="resume" class="tab-content">
+            <!-- <p>My Resume will be available soon.</p> -->
+            <a href="download" id="downloadCV" class="btn btn2"
+              >Download Resume</a
+            >
+
+            <div class="resume-card">
+              <div class="resume-preview">
+                <img src="assets/img/mycv.png" alt="Resume Preview" />
+                <!-- <div class="resume-overlay">
+                  <p>Blurred for privacy</p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="career" class="tab-content">
+            <p>Details about my career are coming soon.</p>
+          </div>
+
+          <div id="education" class="tab-content">
+            <div class="education-list">
+              <div class="education-card">
+                <img src="assets/img/2021-04-05.jpg" alt="SMK Wikrama Bogor" />
+                <div class="edu-details">
+                  <h4>SMK Wikrama Bogor</h4>
+                  <h5>2023 - Present</h5>
+                  <p>
+                    Jl. Raya Wangun, RT.01/RW.06, Sindangsari, Kec. Bogor Tim.,
+                    Kota Bogor, Jawa Barat 16146
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/guHwAcdYaGtp9TMd8"
+                    class="map-link"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i> View on Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        openTab(null, "intro"); // Jalankan openTab saat halaman dimuat untuk tab intro
+      });
+
+      function openTab(event, tabId) {
+        var tabContents = document.getElementsByClassName("tab-content");
+        var tabButtons = document.getElementsByClassName("tab-button");
+
+        // Sembunyikan semua tab dengan menghapus class 'active' dan 'display:block'
+        for (let i = 0; i < tabContents.length; i++) {
+          tabContents[i].classList.remove("active");
+          tabContents[i].style.display = "none";
+        }
+
+        for (let i = 0; i < tabButtons.length; i++) {
+          tabButtons[i].classList.remove("active");
+        }
+
+        // Tampilkan tab yang dipilih dengan efek animasi
+        let selectedTab = document.getElementById(tabId);
+        if (selectedTab) {
+          selectedTab.style.display = "block";
+          setTimeout(() => selectedTab.classList.add("active"), 10);
+        }
+
+        // Aktifkan tombol hanya jika event ada (supaya tidak error saat halaman pertama kali dimuat)
+        if (event) {
+          event.currentTarget.classList.add("active");
+        } else {
+          // Jika dipanggil otomatis (tanpa event), aktifkan tombol "Intro"
+          let defaultButton = document.querySelector(
+            `[onclick*="openTab(event, 'intro')"]`
+          );
+          if (defaultButton) defaultButton.classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>

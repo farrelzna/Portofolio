@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="proto.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +13,7 @@
     <link
       rel="shortcut icon"
       type="x-icons"
-      href="img/a46ddd7873e5a5425dd566e9b076b350.jpg"
+      href="assets/img/a46ddd7873e5a5425dd566e9b076b350.jpg"
     />
     <link
       rel="stylesheet"
@@ -22,85 +22,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Proto</title>
+    <title>Self Profile</title>
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
           <img
-            src="img/BackgroundEraser_20231125_225707312.png"
-            width="80px"
-            height="100px"
+            src="assets/img/BackgroundEraser_20231125_225707312.png"
+            width="50px"
+            height="70px"
           />
           <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#projects">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <div class="marker"></div>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text" id="header">
+        <div class="header-text" id="home">
           <p>Web Portofolio</p>
-          <img src="img/foto.jpg" alt="" />
-          <h1>Hi, saya <span>Farrel</span><br />dan ini Portofolio saya</h1>
-        </div>
-      </div>
-    </div>
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="img/bg.jpg" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <img src="img/bg.jpg" alt="" />
-            <p>
-              Halo! Saya Farrel Izzan Maulana, seorang pelajar jurusan PPLG yang
-              berfokus pada desain web. Dengan keahlian dalam menciptakan
-              antarmuka yang menarik dan fungsional, saya berkomitmen
-              menghadirkan solusi kreatif untuk kebutuhan digital. Saya selalu
-              berusaha mengembangkan diri dengan mempelajari tren terbaru dalam
-              teknologi dan desain. Portofolio ini adalah hasil dari dedikasi
-              saya dalam menggabungkan estetika dengan fungsi. Mari diskusikan
-              ide-ide Anda, dan saya siap membantu mewujudkannya!
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-links" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>UI/UX</span><br />Design Web/App interface</li>
-                <li><span>Web Development</span><br />Design App interface</li>
-                <li><span>Game Development</span><br />Building Pc Games</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>2023 - curent</span><br />Lorem ipsum</li>
-                <li><span>2022 - curent</span><br />Lorem ipsum</li>
-                <li><span>2021 - curent</span><br />Lorem ipsum</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
-                <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
-                <li><span>2023</span><br />UI/UX DESIGN TRAINING</li>
-              </ul>
-            </div>
-          </div>
+          <img src="assets/img/foto.jpg" alt="" />
+          <h1>Hi, im <span>farrel</span><br /></h1>
         </div>
       </div>
     </div>
@@ -151,29 +98,35 @@
           <h1 class="sub-tittle" id="projects">My Projects</h1>
           <div class="project-list">
             <div class="project-card">
-              <img src="img/image1.png" alt="Project 1" />
+              <img src="assets/img/image1.png" alt="Project 1" />
               <h2>Pengaduan Masyarakat</h2>
               <p>
-                Kami menghadirkan solusi inovatif untuk memenuhi kebutuhan masyarakat melalui web aplikasi yang andal dan efisien.
-                Dibangun menggunakan Framework Laravel, aplikasi ini dirancang untuk memberikan pengalaman terbaik bagi pengguna.
+                Kami menghadirkan solusi inovatif untuk memenuhi kebutuhan
+                masyarakat melalui web aplikasi yang andal dan efisien. Dibangun
+                menggunakan Framework Laravel, aplikasi ini dirancang untuk
+                memberikan pengalaman terbaik bagi pengguna.
               </p>
               <a href="#" class="btn1">View Project</a>
             </div>
             <div class="project-card">
-              <img src="img/image2.png" alt="Project 2" />
+              <img src="assets/img/image2.png" alt="Project 2" />
               <h2>Tomo App</h2>
               <p>
-                Cari dan jual berbagai parabotan rumah tangga dengan mudah dan cepat!.
-                Nikmati pengalaman belanja online yang aman, nyaman, dan praktis dengan aplikasi kami yang dirancang menggunakan Framework Laravel
+                Cari dan jual berbagai parabotan rumah tangga dengan mudah dan
+                cepat!. Nikmati pengalaman belanja online yang aman, nyaman, dan
+                praktis dengan aplikasi kami yang dirancang menggunakan
+                Framework Laravel
               </p>
               <a href="#" class="btn1">View Project</a>
             </div>
             <div class="project-card">
-              <img src="img/image1.png" alt="Project 3" />
+              <img src="assets/img/image1.png" alt="Project 3" />
               <h2>Apotek</h2>
               <p>
-                Mudahnya mengelola apotek kini dalam genggaman! Aplikasi ini dirancang khusus untuk memenuhi kebutuhan apotek dengan fitur lengkap, praktis, dan efisien.
-                Dibangun menggunakan Framework Laravel, aplikasi ini memberikan pengalaman yang cepat dan aman.
+                Mudahnya mengelola apotek kini dalam genggaman! Aplikasi ini
+                dirancang khusus untuk memenuhi kebutuhan apotek dengan fitur
+                lengkap, praktis, dan efisien. Dibangun menggunakan Framework
+                Laravel, aplikasi ini memberikan pengalaman yang cepat dan aman.
               </p>
               <a href="#" class="btn1">View Project</a>
             </div>
@@ -200,53 +153,8 @@
           </div>
         </div>
       </div> -->
-
-      <div class="container">
-        <h1 class="sub-tittle">Riwayat Pendidikan</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="img/2022-05-26.jpg" alt="" />
-            <h4>SDN Ciawi 01</h4>
-            <div class="layer">
-              <p>
-                Jl. Nasional 11 No.487, Bendungan, Kec. Ciawi, Kabupaten Bogor,
-                Jawa Barat 16720
-              </p>
-              <a href="https://maps.app.goo.gl/KUNi7fg3Vhgme9g3A"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="img/2023-06-13.jpg" alt="" />
-            <h4>SMPN 1 Megamendung</h4>
-            <div class="layer">
-              <p>
-                8VX8+VWF, Jalan Raya Puncak, Pasir Angin, Megamendung, Cipayung
-                Datar, Kec. Megamendung, Kabupaten Bogor, Jawa Barat 16720
-              </p>
-              <a href="https://maps.app.goo.gl/Tnfp4pxgUJVRUJ328"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="img/2021-04-05.jpg" alt="" />
-            <h4>SMK Wikrama Bogor</h4>
-            <div class="layer">
-              <p>
-                Jl. Raya Wangun, RT.01/RW.06, Sindangsari, Kec. Bogor Tim., Kota
-                Bogor, Jawa Barat 16146
-              </p>
-              <a href="https://maps.app.goo.gl/guHwAcdYaGtp9TMd8"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-      </div>
     </div>
+    
     <div id="contact">
       <div class="container">
         <div class="row">
@@ -269,7 +177,6 @@
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </div>
-            <a href="download" id="downloadCV" class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
             <form
@@ -304,28 +211,6 @@
       </div>
     </div>
 
-    <script src="main.js"></script>
-    <script>
-      document
-        .getElementById("downloadCV")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-
-          // Path to the CV file
-          const filePath = "img/mycv.jpg";
-
-          // Create a temporary anchor element
-          const tempLink = document.createElement("a");
-          tempLink.href = filePath;
-          tempLink.download = "Farrel-Izzan-Maulana-CV.jpg"; // Nama file yang akan diunduh
-
-          // Append to the document and trigger download
-          document.body.appendChild(tempLink);
-          tempLink.click();
-
-          // Remove the temporary link
-          document.body.removeChild(tempLink);
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

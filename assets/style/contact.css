@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:800");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #141212;
+  color: #fff;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.1); /* Transparan */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav img {
+  margin: 10px 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 40px;
+}
+
+nav ul li a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #e31b59;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.contact-card {
+  /* background: #141212; */
+  background: rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.contact-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+} 
+
+.contact-subtitle {
+    font-size: 10px;
+    color: #aaa;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+/* Layout Contact */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left h2,
+.contact-right h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Social Buttons */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  background: #222;
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.email {
+  background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.linkedin {
+  background: linear-gradient(135deg, #0077b5, #005582);
+}
+
+.twitter {
+  background: linear-gradient(135deg, #1da1f2, #0d8be0);
+}
+
+.instagram {
+  background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf);
+}
+
+.github {
+  background: linear-gradient(135deg, #6e6e6e, #333);
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Call Box */
+.call-box {
+  background: linear-gradient(135deg, #1e824c, #16a085);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #444;
+  color: #141212;
+}
+
+/* Response Time */
+.response-time {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #141212;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: none;
+  border: 1px solid #444;
+  color: white;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header-text {
+    margin-top: 50%;
+    margin-bottom: 75%;
+  }
+  .header-text p {
+    display: block;
+  }
+  .header-text img {
+    display: none;
+  }
+  .header-text h1 {
+    font-size: 30px;
+    float: none;
+    margin-top: 10px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #e31b59;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 120vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul:hover {
+    color: #141212;
+    transition: 1s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul li a:hover {
+    color: #141212;
+    transition: 0.1s;
+    font-weight: 700;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+}
